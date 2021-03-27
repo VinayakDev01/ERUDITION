@@ -1,2 +1,2 @@
-web: gunicorn ankit.wsgi
+web: gunicorn ankit.wsgi --log-file -
 
