@@ -1,0 +1,156 @@
+{% extends 'movie/base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'movie/css/profile.css' %}" />
+{% endblock %}
+
+{% block body %}
+<div class="akm">
+<div class="v">
+
+
+<center><h2><b>Welcome!!!</b> &nbsp&nbsp PHP Interview Question </h2></center>
+
+      
+									
+																						
+																					
+<b>1)  What is PHP? ?</b></br></br>
+
+ PHP is a web language. It is based on scripts so that user can dynamically create web pages. It also Follows OOPs concepts. <br/>
+PHP is also known as   server side scripting language. It is commonly used for develop web applications. It is easy in use so that non technical person can cretae websites using its CMS and framework (PHP facilitate more framework and cms). 
+</br></br></br></br>
+												
+																						
+																							
+<b>2) What is the full form of PHP ? </b></br></br></br>
+
+  
+  PHP is stand for:- <b>"Hypertext Preprocessor"</b></br></br></br></br>
+																							
+																						
+																		
+<b>3)Which programming language resemble to PHP?  </b></br></br>
+  There are two progarmming languages whose syntax resemble to PHP. Is given below:- <br/><br/>
+  <b>1.</b> Perl and
+	<b>2.</b>	C language	</br></br></br></br>																			
+																																		
+ <b>4) What are the types of error in PHP?</b></br></br>
+There are following given types of erorrs in PHP:-
+	<b>1.Notices:-</b> These are trivial, non-critical errors that PHP encounters while executing a script. <br/>
+<b>2. Warnings:-</b> These are more serious errors. <br/>
+<b>3. Fatal errors:-</b> These are critical errors.<br/>
+<b>4. Parse Error:-</b> Commonly caused due to syntax mistakes in codes.
+ </br></br></br></br>
+																			
+<b>5) How can you capture audio/video in PHP?
+.</b></br></br>
+Firstly you must have installed a module tha is "FFmpeg" . The module FFmpeg is completely able to record, convert and stream audio and video both. It includes a codec library for the leading audio/video that is known as "libavcodec". FFmpeg can be compiled on most of operating system.But it is developed under Linux.
+</br></br></br></br>																															
+																							
+<b>6) What do you know about PEAR ? 
+   </b></br></br>
+  PEAR is short form of “PHP Extension and Application Repository”. It is used to extends PHP and also provide facilityof  a higher level of programming for web development.
+</br></br></br></br>
+																																	
+																						
+<b>7) What do you understand about Open Source Software?   </b></br></br>
+   The open source software refer to that software which the source codes can freely used, modify, and shared by anyone. The open source software can also be distributed under licenses that must be follow the Open Source Definition.
+  </br></br></br></br>
+
+
+<b>8)  What is the difference between explode() and split() functions?  </b><br/><br/>
+      Split() function uses regular expression for splits string into array. Where, Explode() function uses string for splits a string into array.
+ </br></br></br></br>
+
+
+<b>9)  What is use of trim() function ?</b></br></br>
+      The trim() function is used to  remove whitespaces and other predefined characters  from the beginning and end both side of a string</br></br></br></br>
+
+
+
+<b>10) what can you do for set a page as a home page in a php based site?    </b></br></br>
+    We can change name of that page with <b>"index.php"</b> which is going to be set as homepage. Because PHP provides default name of "index.php"  of homepage.  </br></br></br></br>
+
+
+<b>11)  What function is use to find the length of a string?
+    </b></br></br>
+     TO find the length of a string you can use <b>strlen()</b> function.</br></br></br></br>
+																																	
+																						
+<b>12) what is isset() function in php?    </b></br></br>
+      The <b>isset()</b> function is used to determine if a variable is set and is not NULL.</br></br></br></br>
+
+
+<b>13)What is the use of "ksort" in php?   </b></br></br>
+kshort is used to sort an array by thr use of key in a reverse order. For easily remember you can understand that in kshort "k" is stand for key and "short" is stand for shorting. </br></br></br></br>
+
+
+<b>14) how can you delete a file from the system ? </b></br></br>
+       By the using <b>Unlink()</b> function, you can delete the given file from the file system.</br></br></br></br>
+
+
+
+<b>15) What is difference between include() and require() ? </b></br></br>
+    In require(), if  file is not found by require(), then there is occur an error tha is fatal error and it also halt the execution of the script. Where, in include(), if file is not found by include(), it will arises warning, but the execution of the script will continue. </br></br></br></br>
+
+
+ <b>16)  How can you print the data on Webpage in php?</b></br></br>
+       You can print the data on the webpage by <b>"echo"</b>. An example is given below:-<br/>
+       	<b>  <?php echo 'Car insurance'; ?> </b>
+
+       </br></br></br></br>
+																																	
+																						
+<b>17) How can you include a file to a php page?.    </b></br></br>
+      You can include a file by using of <b>"include()" or "require()" </b> function.You should be use these functions with file path as its parameter. </br></br></br></br>
+
+
+<b>18)  How to declare an array in php?   </b></br></br>
+   		There are following given code to declare an array:- <br/>
+   		<b>var</b> $arr = array('cycle',bike','car');
+      </br></br></br>
+
+
+<b>19)   How to check a value exist in array or not? </b></br></br>
+		To check the value that is exist in array , You can use	<b>in_array() function</b> .		      </br></br></br></br> 
+
+
+
+<b>20)  Write a command to set cookies in PHP ? </b></br></br>
+       To set cookies in PHP use as follows:- <br/>
+   		Setcookie("sample", "ram", time()+3600);</br></br></br></br>
+
+
+<b>21)  How you can retrieve a Cookie Value?    </b></br></br>
+		To retrieve a cookie value you can use as follows:- <br/>
+        echo $_COOKIE["user"];</br></br></br></br>
+																																	
+																						
+<b>22)  Write the command to  create a session, set a value in session, and  remove the data from a session?   </b></br></br>
+      There are following commmands given below:- <br/>
+      <b> Create session :-</b> session_start(); <br/>
+      <b>Set value into session :-</b> $_SESSION['USER_ID']=1; <br/>
+      <b>Remove data from a session :-</b> unset($_SESSION['USER_ID']</br></br></br></br>
+
+
+<b>23)  Write a commmand to create a database using PHP and MySQL.  </b></br></br>
+       To create MySQL database by the use of following code:- <br/>
+        <b>mysql_create_db(“Database_Name”)</b></br></br></br></br>
+
+
+<b>24)    What is header() function in php ?  </b></br></br>
+      The header() function is perform to sends a raw HTTP header to a client. And the herder() function is also used for the redirecting of pages. The header() function must be invoked (called) before any actual output is seen.</br></br></br></br>
+
+
+
+<b>25)   What is the process of execute a PHP script using command line   </b></br></br>
+       Firstly run the PHP CLI ,is short form of Command Line Interface, program and also provide the PHP script file_name as the command line argument.</br></br></br></br>
+
+
+
+																			
+																		</div>
+																	</div>
+
+{% endblock %}

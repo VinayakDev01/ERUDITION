@@ -1,0 +1,112 @@
+{% extends 'movie/base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'movie/css/profile.css' %}" />
+{% endblock %}
+
+{% block body %}
+<div class="akm">
+<div class="v">
+
+            <div font-size:20px>
+              <center><h1><b><u>Learn</u> <u>Python</u></b></h1></center>
+              <li><a href="#a1"> <b>Introduction</b> </a></li>
+              <li><a href="#a2"> <b>Variable</b> </a></li>
+              <li><a href="#a3"> <b>Data Type</b></a></li>
+              <li><a href="#a4"> <b>Operator</b></a></li>
+              <li><a href="#a5"> <b>Control Flow Statement</b></a></li>
+              <li><a href="#a6"> <b>User Define Function</b></a></li>
+              <li><a href="#a7"> <b>Lambda Expression</b></a></li>
+
+                <h2 id= a1><u>Introduction:-</u></h2>
+                    <p>Python is a high-level,object oriented interpreted programming language.Python is always known as <b>Scripting Launguage.</b><br/>OOPS(object oriented programming system) provided a real life approach(objects).Python follows the OOPS concept.It uses to make/develop application/software.Such as desktop application,mobile application,web application,embedded (Robotics) application.</p>
+                    <p>There are used interpreter to change the high-level language to machine-level language.It is also known as beginer level language because of its easier syntax.It is platform independent.It can extend that means make or add changes.It is used to make GUI application.We can also perform on database server,it is scalable across platform.Python is secure because in OOPS one object can not access the properties and functionality of another object.The file extension is <b>.py</b>. Such as <b>python.py</b>.</p>
+                    <p>
+                      <h3><b>Rules of writting source code :- </b></h3>
+                      <b>1.</b> Do not start with space whenever you start writting the code.<br/>
+                      <b>2.</b> Space refers to unexpected indent error.<br/>
+                      <b>3.</b> We can use space inside the code block.<br/>
+                      <b>4.</b> Always write new instruction within new line.<br/>
+                      <b>5.</b> Always write the instruction with begining.<br/>
+                      <b>6.</b> Whenever write multiple code/instruction then use semicolon (;) at the end of each instruction.<br/><br/>
+                    </p>
+                    <p>
+                      <h3><b>OOPS concepts in Python:-</b></h3>
+                      <b>1.Encapsulation:-</b>Encapsulation is a process of wrapping up of data into a single unit. It provided the data security by the binding the properties and functionality.It is just like capsul in real life where multiple medicines are combine into a single unit.<br/><br/>
+                      <b>2.Inheritance:-</b>Inheritance is a process of aquiring properties and functionality from parent class into child class.By the use of inheritance we can make reusable the code.It is just like a child inherited his/her parents properties.<br/>
+                      <b>There are following type of Inheritance:-</b><br/>
+                      <li><a href="#i1"> <b>1.</b>Single Inheritance</a></li>
+                      <li><a href="#i2"> <b>2.</b>Multiple Inheritance</a></li>
+                      <li><a href="#i3"> <b>3.</b>Multilevel Inheritance</a></li>
+                      <li><a href="#i4"> <b>4.</b>Hierarchical Inheritance</a></li>
+                      <li><a href="#i5"> <b>5.</b>Hybrid Inheritance</a></li><br/>
+
+
+                      <b>3.Polymorphism:-</b>Polymorphism refer to the one object take more than form.Just like a man who is son as well as father,brother etc.By the use of Polymorphism we can reduce code complexity.<b>In python only operator overloading allowed,method overloading is not allowed because in python method can receive different  type of parameter.</b><br/><br/>
+                      <b>4.Abstraction:-</b>Abstraction is a process of hiding the unnecessary data from the user.In other word, we can say that by the use of Abstraction we can reduce the code complexity.The real life example of Abstraction is mobile phone which have only those functionality is outside which can be used by user.<br/><br/>
+                    </p>
+
+
+                <h2 id = a2><u> Variable</u></h2>
+                <h2 id = a3><u> Data Type</u></h2>
+                <h2 id = a4><u> Operator</u></h2>
+                <h2 id = a5><u> Control Flow Statement</u></h2>
+                  <p>
+                    &nbsp&nbsp&nbsp&nbsp&nbspIt is used to manage the execution,<br/>
+                    <b>Decision making control flow  Statement (Selection Statement) :-</b><br/>
+                    <li><a href="#b1"> <b>1.</b>if</a></li>
+                    <li><a href="#b2"> <b>2.</b>if-else</a></li>
+                    <li><a href="#b3"> <b>3.</b>elif</a></li><br/>
+
+                    <h3 id = b1><u>1. if :-</u></h3>
+                      <h3><u>Syntax :-</u></h3>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp if booleanExp :      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //Header linear<br/>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp statement       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  //must be follow indentation
+
+                   <h3 id = b2><u>2. if-else :-</u></h3>
+                      <h3><u>Syntax :-</u></h3>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp if booleanExp :    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  //Header linear<br/>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp statement      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   //must be follow indentation<br/>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp else :<br/>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp statement       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  //must be follow indentation
+
+                  <h3 id = b2><u>2. if-else :-</u></h3>
+                     <h3><u>Syntax :-</u></h3>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp if booleanExp :    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  //Header linear<br/>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp statement       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  //must be follow indentation<br/>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp elif booleanExp :<br/>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp statement       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  //must be follow indentation<br/>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp else :<br/>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp statement        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //must be follow indentation
+                  </p>
+
+                  <p>
+                    <b>&nbsp&nbsp&nbsp&nbsp&nbspLoop Control (Loop Construct) :-</b><br/>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp for<br/>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp while<br/><br/>
+                    <b>&nbsp&nbsp&nbsp&nbsp&nbspJump Control :-</b><br/>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp break<br/>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp continue<br/>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp pass<br/><br/>
+                  </p>
+
+                <h2 id = a6><u> User Define Function</u></h2>
+                <h2 id = a7><u> Lambda Expression</u></h2>
+                  <p>
+                    <b>Lambda Expression</b> also known as one linear function or anonymous function.It is used to only one statement use like method.It is a standard definition method.Cann't write complex code.<br/>
+                    <b><u>Syntax:</u>-</b><br/>
+                    <b>&nbsp&nbsp&nbsp&nbsp&nbsplambda</b> var1,var2,var3,...<b>:</b> expression<br/>
+                    <b><u>Example:-</u></b><br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp powfun=<b>lambda</b> a,b:(a+b)**2/2<br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp print(powfun(2,6))<br/><br/>
+                    <b><u>Calculate area of circle:-</u></b><br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp area=<b>lambda</b> r: 3.14*(r)**2<br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp r=<b>input</b>("Enter radius=")<br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp print(area(r))
+                  </p>
+
+                  <center><h1> Comming Soon..!!! </h1></center>
+            </div>
+</div>
+</div>
+{% endblock %}

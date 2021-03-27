@@ -1,0 +1,231 @@
+{% extends 'movie/base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'movie/css/profile.css' %}" />
+{% endblock %}
+
+{% block body %}
+<div class="akm">
+<div class="v">
+
+ <center><h2> <b>Welcome!</b> &nbsp&nbsp java Interview Questions</h2></center>
+
+
+                
+
+<b>1)What is Java?</b></br></br>
+Java is a fully OOPs language.After compilation it creates Byte code which is run on any platform that's why it is known as platform independent language.
+It is also known as 'WORA' i.e write once run anywhere.</br></br></br></br>
+
+<b>2) What is Byte Code?</b></br></br>
+After compilation  Java compiler converts Java program into byte codes which is executed by JVM(Java Virtual Machine).</br></br></br></br>
+
+<b>3) What is JVM?</b></br></br>
+Java Virtual Machine is a software which is use to interpreted the byte codes.JVM does not compile byte code,it interprets byte code to execute java program.</br></br></br></br> 
+
+<b>4) Write about Java data types?</b></br></br>
+Data type is used to store user defined data.It defines the type of data to be stored that can be byte, short, long, integer, float, double, boolean, character  datatype.</br></br></br></br>
+
+<b>5) What is 'FOR'loop?</b></br></br>
+For' loop is a control flow statement which is used to repeat a block of codes until certain condition is met.At first it has a initial condition for staring of loop, second for testing condition to stoping the loop and third , an increment condition for incrementing the initial value.</br></br></br></br>
+
+<b>6) What is 'while' loop?</b></br></br>
+The 'while' loop is used for repeating a block of codes or set of instructions.This loop repeats the statements until a condition becomes false.It means, it repeats the statement till a condition is true.The number of repetition is not fixed it is based only on the given condition.</br></br></br></br>
+
+<b>7) What is do...while loop?</b></b></br>
+ 'do..while' loop is used to repeat the block of codes.The testing condition is given in 'while' part of the loop but no one condition is given in 'do' part of the loop.
+The 'do..while' executes the instructions with in the loop at least once, after that it checks the testing condition.If testing condition in 'while' part of the loop is true, then it executes the instructions again.When condition is false, then the loop terminates.
+The number of repetition is not fix in this loop.It depends on the condition which is given to the 'while' part of the loop.</br></br></br></br>
+
+<b>8)Tell me something about 'conditional statement'.</b></br></br>
+A conditional statements lets choose which statement executed next.There are various types of conditional statement in Java.
+1-if statement:It executes 'if' block when condition is true.</br> 
+2-if-else statement:It executes the 'if' block when condition is true otherwise 'else' block is executed.
+3-if-else-if statement:In This statement multiple statements executes one condition.
+4-nested if statement:This statement represents 'if' block within another 'if' block.At first,when outer 'if' block condition is true then inner 'if' block condition executes .</br></br></br></br>
+
+<b>9)What is switch statement??</b></br></br>
+A switch statement is a type of selection control mechanism it is used to allow the value of a variable to change the control flow of program execution.It gives a more expressive way to compare a value with multiple forms.  The switch has  more than one case blocks and an optional default case also.</br></br></br></br>
+
+<b>10) What is operators?</b></br></br>
+Operators are used to perform the operations on variable and values.There are various type of operators which are given below:</br>
+1:Relational operator</br>
+2:Logical operator</br>
+3:Bitwise operator</br>
+4:Assignment operator</br>
+5:Arithmetic operator</br>
+6:Unary operator</br>
+7:Ternary operator </br></br></br></br>
+
+<b>11) What is Relational operator?</b></br></br>
+In  Java programming language  relational operator is used to test and define various type of relation between two entities.There are six types of relational operator:
+<br/>
+(1)==       ->equality operator<br/>     
+(2)!=       ->non-equality operator <br/> 
+(3)<        ->less than operator.<br/>
+(4)>        -> greater than operator.<br/>
+(5)<=       -> less than or equal to operator.<br/>
+(6)> =      ->greater than or equal to operator</br></br></br></br>
+
+<b>12) What is logical operator?</b></br></br>
+It is also known as compound relational operator which is used to combines two or more relational expressions.logical operators are:</br>
+1:&&     ->     logical AND</br>
+2:||     ->     logical OR</br>
+3:!      ->     logical NOT</br></br></br></br>
+
+<b>13) What is Bitwise operator?</b></br></br>
+A bitwise operator is an operator which is used to perform bitwise operations on binary numbers that is manipulate all the individual bits</br></br></br></br>
+
+<b>14) What is an assignment operator?</b></br></br>
+Assignment operator assigns the values to variables.<br/>
+eg. a=2; </br></br></br></br>
+
+<b>15) What is an arithmetic operator?</b></br></br>
+Arithmetic operators are used to perform mathematical operations on operands(variables).<br/>
+ (for eg. addition, subtraction, multiplication  etc).</br></br></br></br>
+
+<b>16) What is a unary operator?</b></br></br>
+Unary operator is used to perform operation on single variable.<br/>
+These are:<br/>
+1: +	->Unary plus <br/>
+2: -	->Unary minus<br/>
+3: ++	->Increment operator<br/>
+4: --	->decrement operator<br/>
+5: !	->Logical complement operator</br></br></br></br>
+
+<b>17) What is ternary operator in Java?</b></br></br>
+Ternary operator is also known as conditional operator.It is used to perform operations on  three arguments.It expressed a boolean expression which evaluates to either true or false</br></br></br></br>
+
+<b>18) Write the syntax of ternary operator.</b></br></br>
+variable = Expression ? expression1 : expression2</br></br></br></br></br>
+
+<b>19) What is an array in Java?</b></br></br>
+Array contains data of similar data type.It is an object.It can used to store multiple values in a single variable.</br></br></br></br>
+
+<b>20) Do you know about methods?</b></br></br>
+Method is also known as functions. It is a block of code that can perform certain specific task and only runs when it is called.<br></br></br></br>
+
+<b>21) What is method overloading?</b></br></br>
+When more than one method have the same name with different parameters in a same class then it is called as method overloading.</br></br></br></br>
+
+<b>22) What is method overriding?</b></br></br>
+When more than one method have the same name in different class i.e if a child class has same method as parent class then its known as method overriding.</br></br></br></br>
+
+<b>23) Which keyword can be used for overloading?</b></br></br>
+Operator keyword is used for overloading.</br></br></br></br>
+
+<b>24) What is instances in Java programming?</b></br></br>
+In java programming language instance of a class is the object of that class itself</br></br></br></br>
+
+<b>25) What is the main difference between overloading and overriding?</b></br></br>
+Overloading is static Binding,whereas Overriding is dynamic Binding.Overloading is nothing but the same method with different arguments,and it may or may not return the equal value in the same class itself.Overriding is the same method names with the same arguments and return types associated with the class and its child class.</br></br></br></br>
+
+<b>26) Do you know about encapsulation?</b></br></br>
+Wrapping up data in a single unit known as encapsulation.</br></br></br></br>
+
+<b>27) What is an abstraction?</b></br></br>
+Abstraction means 'To Hide', that means abstraction is used to hide the unnecessary details , only required details for an objects are shown.</br></br></br></br>
+
+<b>28) What are the access modifiers?</b></br></br>
+Access modifiers determine the scope of the method or variables that can be accessed from other various objects or classes.There are five types of access modifiers,and they are as follows:</br>
+1)Private</br>
+2)Protected</br>
+3)Public</br>
+4)Friend</br>
+5)Protected Friend</br></br></br></br>
+
+<b>29)For what break and continue statement is used?</b></br></br>
+Break statement is used to break the current flow of the program .It terminates the loop and control the execution of program.<br/>
+Continue statement is used to continue the current flow of the program.In this statement the continue keyword is cause to immediate jump  of loop to next iteration of loop.</br></br></br></br>
+
+<b>30) What is inheritance?</b></br></br>
+In java programming inheritance is used to inherit some properties from parent class to child class.Child class has its own properties also.</br></br></br></br>
+
+<b>31)Can we use multiple inheritance in Java?</b></br></br>
+No, Java doesn’t support multiple inheritance .With the use of interface java works on the concept of multiple inheritance.</br></br></br></br>
+
+<b>32)How many types of Arguments?</b></br></br>
+There are two types of Arguments:<br/>
+	<b>1)Call by Value –</b> Passed value can modifies only inside the function, and it returns the same value which is passed into the function.</br>
+	<b>2)Call by Reference –</b>Passed value can modifies in both side(inside&outside)of the functions and returns the same or different value.</br></br></br></br>
+
+<b>33) Why we use 'this' pointer?</b></br></br>
+This pointer is a reference variable which is used to refer the current object.</br></br></br></br>
+
+<b>34)For what super keyword is use?</b></br></br>
+Super keyword invokes immediately the parent class method.If parent and child class have same name method and we want to call parent class method then we have to use Super keyword.</br></br></br></br>
+
+<b>35)What is Base class?</b></br></br>
+The class which is inherited by another class is known as base class.Base class is also known as parent class.<br/><br/><br/><br/>
+
+<b>36) Which access modifier used by default ?</b></br></br>
+"Private" access modifier</br></br></br></br>
+
+<b>37)What keyword we use in interface?</b></br></br>
+"implements" keyword</br></br></br></br>
+
+<b>38) What is constructor?</b></br></br>
+Constructor initializes the object of its class having same name as the class no return type not even void.</br></br></br></br>
+
+<b>39) Define the various types of constructor.</b></br></br>
+The types of constructor are:<br/>
+1>Default constructor<br/>
+2>Parameterized constructor<br/>
+3>Copy constructor<br/><br/><br/><br/>
+
+<b>40) What do you understand by package in Java?</b></br></br>
+A java package contains a group of similar types of classes and interfaces. There are two categories of package in java.<br/>
+1: built-in package(as java, lang, awt, javax, net, io, util, sql)<br/>
+2: user-defined package<br/>
+</br></br></br></br>
+
+<b>41)What is Exception handling? </b></br><br/>
+Exception handling is used to handle the run time errors caused by exception by using try catch, throw, throws, and finally keywords.</br></br></br></br>
+
+<b>42)What is applet? </b></br></br>
+Applet is a java program which runs inside the web browser.It is small internet based application works at client side.</br></br></br></br>
+
+<b>43)Why is thread? </b></br></br>
+A thread is a light-weight process that can run simultaneously with the other threads of the same process  with sharing of common memory. Threads are separately executed that's why it is an independent, it doesn’t affect the execution of other threads.</br></br></br></br>
+
+<b>44)Do you know about multi threading? </b></br></br>
+When a thread perform execution with other threads simultaneously with in same process known as multi threading. </br></br></br></br>
+
+<b>45)Define state of thread life cycle?</b></br></br>
+The states of thread life cycle are:<br/>
+1: new()<br/>
+2: runnable()</br>
+3: running()<br>
+4: blocked()<br/>
+5: terminate() </br></br></br></br>
+
+<b>46)Is Java is secure language?Why?</b></br></br>
+Yes,java is totally secured language because java programs converted in byte code after compilation.And only JVM can interpreted byte code.</br></br></br></br>
+
+<b>47)Is type casting is possible in Java programming language? </b><br/><br/>
+Yes,There is two way in which type casting is possible.<br/>
+1>Widening Casting <br/>
+2>Narrowing Casting </br></br></br></br>
+
+<b>48)What is type casting?</b></br></br>
+When we convert the value of built in data type in another data type is known as type casting.</br></br></br></br>
+
+<b>49)How many types of comments is used in Java?</b></br></br>
+There are two types of comments used in Java:<br/>
+1> Single line comments "//"</br>
+2> Multi line comments "/*  */"<br/><br/><br/>
+
+<b>50)Name the methods of applet life cycle?</b><br/><br/>
+1: init( )<br/>
+2: start( )<br/>
+3: paint( )<br/>
+4: stop( )<br/>
+5: terminate( )<br/><br/><br/><br/>
+
+
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

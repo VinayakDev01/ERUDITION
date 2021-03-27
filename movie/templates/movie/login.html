@@ -1,0 +1,61 @@
+{% extends 'movie/base.html' %}
+{% block title %}Login{% endblock %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'movie/css/profile.css' %}" />
+{% endblock %}
+
+{% block body %}
+<div class="akm"><br/><br/><br/><br/><br/><br/>
+    <div class="ak">
+        <div class = "container-fluid">
+            <div class="col-sm-12 col-md-7">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                    <h1 ><strong>Log In</strong> </h1>
+                    {% if error_message %}
+                        <p><strong>{{error_message}}</strong></p>
+                    {% endif %}
+		            <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+		                {% csrf_token %}
+		                <div class="form-group">
+		                    <label class="control-label col-sm-2" for="id_username">
+		                        Username:&nbsp;&nbsp;
+		                    </label>
+		                    <div class="col-sm-10">
+		                        <input id="id_username" maxlength="30" name="username" type="text">
+		                    </div>
+		                </div><br/>
+		                <div class="form-group">
+		                    <label class="control-label col-sm-2" for="id_password">
+		                        Password:&nbsp;&nbsp;
+		                    </label>
+		                    <div class="col-sm-10">
+		                        <input id="id_password" maxlength="30" name="password" type="password">
+		                    </div>
+		                </div><br/>
+
+		                <div class="col-sm-offset-2 col-sm-10">
+		                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <button type="submit" class="btn btn-success">Submit</button>
+		                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  class="btn btn-danger" href="{% url 'movie:password_reset' %}"> Forgot Password</a>
+
+		                </div><br/>
+		            </form>
+                </div>
+    		        
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-footer">
+            <h3 >
+                
+                Don't have an account? <a href="{% url 'movie:signup' %}" style="color:#3895D3">Click here</a> to Signup.
+            </h3>
+        </div>
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+
+
+{% endblock %}

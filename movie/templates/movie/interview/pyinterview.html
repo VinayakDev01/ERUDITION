@@ -1,0 +1,171 @@
+﻿{% extends 'movie/base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'movie/css/profile.css' %}" />
+{% endblock %}
+
+{% block body %}
+<div class="akm">
+<div class="v">
+
+
+<center><h2><b>Welcome!!!</b> &nbsp&nbsp Python Interview Question </h2></center>
+
+      
+									
+																						
+																					
+<b>1) What do you know about Python?</b></br></br>
+
+Python is a high-level,object oriented interpreted programming language. Python is also known as Scripting Launguage.<br/>
+
+OOPS(object oriented programming system) provided a real life approach (objects). Python follows the OOPS concept. It uses to make/develop application/software. Such as desktop application, mobile application, web application, embedded (Robotics) application.<br/>
+There are used interpreter to change the high-level language to machine-level language. It is also known as beginer level language because of its easier syntax. It is platform independent.It can extend that means make or add changes. It is used to make GUI application. We can also perform on database server, it is scalable across platform. Python is secure because in OOPS one object can not access the properties and functionality of another object. <br/>
+The file extension is .py. Such as <b>python.py</b> .</br></br></br></br>
+												
+																						
+																							
+<b>2) What is comment in python? How to create a comment in python? </b></br></br></br>
+
+The comment is use to describe the python source code. Whenever we use comment in source code then the source code become more readable. The comments are help us to read and understand the code that is comments are tell us to use or importance of that code. <br/>
+<h2>Create a comment</h2>
+To make a comment we must be start the comment with <b>"#" </b>. <br/>
+<b>Example : </b><br/>
+#This is Hello world program
+print(" Hello, World!!!") 
+</br></br></br></br>
+																							
+																						
+																		
+<b>3) Some coders debug their programs by placing comment symbols on some codes instead of deleting it. How does this aid in debugging?</b></br></br>
+Placing comment symbols /* */ around a code, also referred to as “commenting out”, is a way of isolating some codes that you think maybe causing errors in the program, without deleting the code. The idea is that if the code is in fact correct, you simply remove the comment symbols and continue on. It also saves you time and effort on having to retype the codes if you have deleted it in the first place.</br></br></br></br>
+																						
+																																		
+ <b>4) Differentiate between List and Tupple?</b></br></br>
+	List is a container that can store the data and the list can be modified .<br/>
+    Tupple is the list but it can not be modified. </br></br></br></br>
+																			
+																																
+																							
+<b>6) Python is better than Java!!!
+   </b></br></br>
+  Python (while comparison with Java) is easy in use and  also save time. Whenever it comes to data, Java is used static typing, but Python is used dynamic typing. It is considered in the Python advancement in campare with Java.
+</br></br></br></br>
+																																	
+																						
+<b>7)  How many  Data Types are  in Python?    </b></br></br>
+     <b>There are  five  data types in python:-</b>
+ 
+<b>1.</b> String<br/>
+ <b>2.</b> List<br/>
+  <b>3.</b> Number<br/>
+<b>4.</b> Dictionary<br/>
+ <b>5.</b> Tuple
+  </br></br></br></br>
+
+
+<b>8)   What do you know about “Pickling” and “Unpickling"   </b><br/><br/>
+      When a module within Python is accepted and converted into a string module, and then later dumped into the file. That is known as PICKLING.<br/>
+Unlike pickling, unpickling is that when you retrieve the string module from the files.
+ </br></br></br></br>
+
+
+<b>9)  Please share you know about ‘Lambda Expression’. </b></br></br>
+       <b>Lambda Expression</b> also known as one linear function or anonymous function.It is used to only one statement use like method.It is a standard definition method.Cann't write complex code.<br/>
+                    <b><u>Syntax:</u>-</b><br/>
+                    <b>&nbsp&nbsp&nbsp&nbsp&nbsplambda</b> var1,var2,var3,...<b>:</b> expression<br/>
+                    <b><u>Example:-</u></b><br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp powfun=<b>lambda</b> a,b:(a+b)**2/2<br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp print(powfun(2,6))<br/><br/>
+                    <b><u>Calculate area of circle:-</u></b><br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp area=<b>lambda</b> r: 3.14*(r)**2<br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp r=<b>input</b>("Enter radius=")<br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp print(area(r))</br></br></br></br>
+
+
+
+<b>10) What is use of "PASS" ?   </b></br></br>
+    Pass  is used to simply indicate a blank space that is left blank within the compound statement.   </br></br></br></br>
+
+
+<b>11)  What is ‘Dictionary’ in python ?
+    </b></br></br>
+      A dictionary is an built-in (predefine) data type. Dictionary has  keys and the key corresponding values </br></br></br></br>
+																																	
+																						
+<b>12)  Why Python is also known as an Interpreted Language ?    </b></br></br>
+      Python is an interpreted programming language. Beacause It is a three-way process - firstly you  write the source code, then Python convert your source code into an intermediate language  and then it is yet again change into machine level code and then executed. </br></br></br></br>
+
+
+<b>13) What is "Slicing" ?    </b></br></br>
+    Whenever you are going to select multiple items from  lists, strings and so on. That is known as Slicing. </br></br></br></br>
+
+
+<b>14)   What is use of "Range" and "Xrange" ?  </b></br></br>
+       The RANGE is used to brings back a list object,where XRANGE is used to get return xrange object.</br></br></br></br>
+
+
+
+<b>15)  What do know about Monkey Patching?    </b></br></br>
+     Monkey patching is  refers to modifications  into the source code when it is already in running state.  </br></br></br></br>
+
+
+ <b>16)  Write a command to delete a file in PYTHON?    </b></br></br>
+       You can delete the file by using following command:-<br/>
+       	<b> os.remove(name_of_the_file)</b>
+
+       </br></br></br></br>
+																																	
+																						
+<b>17)  Write a program that would randomize items from the list.    </b></br></br>
+      from random import shuffle <br/>
+      x = ['Python', 'is', 'a', 'scripting', 'language'] <br/>
+      shuffle(x) <br/>
+      print(x) </br></br></br></br>
+
+
+<b>18)   Write a piece of code that would calculate a list of given numbers   </b></br></br>
+      def list_sum(num_list: <br/>
+      if len(num_list) == 1:<br/>
+      return num_list[0] + list_sum(num_list[1:]) <br/>
+      print(list_sum([3,2,3,3,4]))
+      </br></br></br>
+
+
+<b>19)    What is Abnormal Termination?  </b></br></br>
+		When your program is going to terminated in middle of execution cause of crash your program, that is known as Abnormal Termination.
+		      </br></br></br></br> 
+
+
+
+<b>20)   What is difference between help() and dir() ? </b></br></br>
+       help() is used to show the documentation string, And  dir() is used to displays the defined symbols.</br></br></br></br>
+
+
+<b>21)      </b></br></br>
+       </br></br></br></br>
+																																	
+																						
+<b>22)      </b></br></br>
+       </br></br></br></br>
+
+
+<b>23)      </b></br></br>
+       </br></br></br></br>
+
+
+<b>24)      </b></br></br>
+       </br></br></br></br>
+
+
+
+<b>25)      </b></br></br>
+       </br></br></br></br>
+
+
+
+																			
+																		</div>
+																	</div>
+
+{% endblock %}

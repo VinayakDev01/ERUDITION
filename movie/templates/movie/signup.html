@@ -1,0 +1,44 @@
+{% extends 'movie/base.html' %}
+{% block title %}Signup{% endblock %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'movie/css/profile.css' %}" />
+{% endblock %}
+
+{% block body %}
+<div class="akm"><br/><br/><br/>
+    <div class="ak">
+        <div class = "container-fluid">
+            <div class="col-sm-12 col-md-7">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h1 class="text-center"><strong>Sign Up</strong>  </h1>
+                        {% if error_message %}
+                            <p><strong>{{error_message}}</strong></p>
+                        {% endif %}
+                        <form action="." method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <table>
+                                {{ form.as_table }}
+                                {{ profile_form.as_table }}
+                                <tr><td colspan="2">
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                    
+                                </td></tr>
+                            </table>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-footer">
+            <h3 >
+                Already have an account? <a href="{% url 'movie:login' %}" style="color:#3895D3">Click here</a> to log in.
+            </h3>
+        </div>
+    </div><br/><br/><br/>
+</div>
+
+{% endblock %}

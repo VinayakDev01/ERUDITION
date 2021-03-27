@@ -1,0 +1,85 @@
+th{
+	text-align:left;
+}
+body
+{
+	background-color:lightblue;
+	
+}
+#p1
+{
+	position:fixed;
+	left:500px;
+	text-shadow:10px 5px 3px red;
+	z-index:1;
+    text-decoration:underline;
+}
+
+#t1
+{
+	position:relative;
+	top:80px;
+	left:800px;
+	width:500px;
+	height:300px;
+	border-style:double;
+	border-color:blue;
+	border-width:5px;
+	border-radius:20px;
+}
+form
+{
+	position:relative;
+	top:-150px;
+	left:20;
+	
+}
+#a1
+{
+	position:relative;
+	top:-150px;
+	left:780px;
+	width:500px;
+	font-size:20px;
+	font-family:"comic sans ms";
+	color:red;
+	text-align:justify;
+	text-transform:capitalize;
+	text-decoration:underline;
+	background-image:url('background.png');
+}
+iframe
+{
+	position:relative;
+	top:0;
+	width:500px;
+	height:200px;
+}
+p{
+	position:relative;
+	top:0;
+	color:red;
+	font-size:20px;
+}
+a
+{
+	text-decoration:line-through;
+}
+a:link
+{
+	color:black;
+	
+}
+a:visited
+{
+	color:blue;
+}
+a:hover
+{
+	color:orange;
+
+}
+a:active
+{
+	color:brown;
+}

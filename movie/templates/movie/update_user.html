@@ -1,0 +1,54 @@
+{% extends 'movie/base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'movie/css/profile.css' %}" />
+{% endblock %}
+
+{% block body %}
+<div class="akm"><br/><br/><br/>
+	<div class="ak">
+	    <div class = "container-fluid">
+	        <div class="col-sm-12 col-md-7">
+	            <div class="panel panel-default">
+	                <div class="panel-body">
+	                	<h1 class="text-center"><strong>Edit Profile</strong>  </h1>
+
+	                	{% if error_message %}
+                        <p style="color:red;" class="alert alert-danger"><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;{{error_message}}</p>
+                    {% endif %}
+                    {% if Error %}
+                        <p style="color:red;" class="alert alert-danger alert-dismissible"><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp; {{Error}}
+
+                        <button type="button" class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times;</span></button></p>
+                    {% endif %}
+
+						<form action="." method="post" enctype="multipart/form-data">
+							{% csrf_token %}
+						    <table>
+						        {{ form.as_table }}
+						        {{ profile_form.as_table }}
+
+						        
+
+						        <tr>
+						        	<td colspan="2">
+						        	 <div class="form-group">
+                            <label class="control-label col-sm-2" for="id_password">
+                                Password:
+                            </label>
+                            <div class="col-sm-10">
+                                <input id="id_password" maxlength="30" name="password" type="password" placeholder="Password for varify account">
+                            </div>
+                        </div>
+						        	<button type="submit" class="btn btn-success">Submit</button>
+						            
+						        </td></tr>
+						    </table>
+						</form>
+					</div>
+	            </div>
+	        </div>
+	    </div>
+	</div><br/><br/><br/>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+
+.akm{
+     background:white url("background_image/center1.jpg") ; 
+
+}
+
+.ak{
+    background:white url("background_image/background.png") ;  
+    width:700px;
+    margin: auto;
+}
+.panel-footer{
+	background: rgb(203,203,193);
+
+}
+
+.v{
+	width: 90%;
+	margin: auto;
+}

@@ -1,0 +1,333 @@
+{% extends 'movie/base.html' %}
+{% load static %}
+
+{% block body %}
+                
+            <div class="center1_wrapper">
+                <div class="center1_wrapper2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span12">
+                                <div class="center1 clearfix">
+                                    <div id="slider_wrapper">
+                                        <div class="">
+                                            <div id="slider_inner" class="clearfix">
+                                                <div id="slider" class="clearfix">
+                                                    <div id="camera_wrap">
+                                                        <div data-src="{% static 'movie/images/midimg3.jpg' %}">
+                                                            <div class="camera_caption nav1 fadeIn">
+                                                                <div class="txt1"><b>Keep Calm</b></div>
+                                                                <div class="txt2"><b>Keep Coding</b></div>
+                                                                <a href="#" class="button0"><span>Compiler</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <div data-src="{% static 'movie/images/midimg4.png' %}">
+                                                            <div class="camera_caption nav1 fadeIn">
+                                                                <div class="txt1"><b>While alive</b></div>
+                                                                <div class="txt2"><b>Keep it up</b></div>
+                                                                    <a href="#" class="button0"><span>Compiler</span></a>
+                                                                </div>
+                                                            </div>
+                                                            <div data-src="{% static 'movie/images/midimg5.jpg' %}">
+                                                                <div class="camera_caption nav1 fadeIn">
+                                                                    <div class="txt1"><b>Coding is</b></div>
+                                                                    <div class="txt2"><b>Life</b></div>
+                                                                        <a href="#" class="button0"><span>Compiler</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="shadow1">
+                                                    <img src="{% static 'movie/images/shadow1.png' %}" alt="" class="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="banner_wrapper">
+                                            <div class="">
+                                                <div id="banner">
+                                                    <a class="banner_prev" href="#"></a>
+                                                    <a class="banner_next" href="#"></a>
+                                                    <div class="carousel-box">
+                                                        <div class="inner">
+                                                            <div class="carousel main">
+                                                                <ul>
+                                                                    <li>
+                                                                        <div class="banner">
+                                                                            <div class="banner_inner">
+                                                                                <a href="#">
+                                                                                    <div class="banner_inner2">
+                                                                                        <figure><img src="{% static 'movie/images/clogo.jpg' %}" width="200px" height="190px"></figure>
+                                                                                        <div class="caption">
+                                                                                            <div class="txt1">C Interview questions</div>
+                                                                                            <div class="txt2"><a href="{% url 'movie:c_questions' %}">Click Here</a> </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="banner_shadow"><img src="{% static 'movie/images/shadow2.png' %}" alt="" class="img"></div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="banner">
+                                                                            <div class="banner_inner">
+                                                                                <a href="#">
+                                                                                    <div class="banner_inner2"><figure><img src="{% static 'movie/images/cpplogo.jpg' %}" alt="" class="img"></figure>
+                                                                                        <div class="caption">
+                                                                                            <div class="txt1">C++ Interview questions</div>
+                                                                                            <div class="txt2"><a href="{% url 'movie:cpp_questions' %}">Click Here</a></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="banner_shadow"><img src="{% static 'movie/images/shadow2.png' %}" alt="" class="img"></div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="banner">
+                                                                            <div class="banner_inner">
+                                                                                <a href="#">
+                                                                                    <div class="banner_inner2"><figure><img src="{% static 'movie/images/javalogo.jpg' %}" alt="" class="img"></figure>
+                                                                                        <div class="caption">
+                                                                                            <div class="txt1">Java Interview questions</div>
+                                                                                            <div class="txt2"><a href="{% url 'movie:java_questions' %}">Click Here</a></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="banner_shadow"><img src="{% static 'movie/images/shadow2.png' %}" alt="" class="img"></div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="banner">
+                                                                            <div class="banner_inner">
+                                                                                <a href="#">
+                                                                                    <div class="banner_inner2"><figure><img src="{% static 'movie/images/pylogo.jpg' %}" alt="" class="img"></figure>
+                                                                                        <div class="caption">
+                                                                                            <div class="txt1">Python Interview questions</div>
+                                                                                            <div class="txt2"><a href="{% url 'movie:python_questions' %}">Click Here</a> </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="banner_shadow"><img src="{% static 'movie/images/shadow2.png' %}" alt="" class="img"></div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="banner">
+                                                                            <div class="banner_inner">
+                                                                                <a href="#">
+                                                                                    <div class="banner_inner2"><figure><img src="{% static 'movie/images/banner6.jpg' %}" alt="" class="img"></figure>
+                                                                                        <div class="caption">
+                                                                                            <div class="txt1">HTML Interview questions</div>
+                                                                                            <div class="txt2"><a href="{% url 'movie:html_questions' %}">Click Here</a></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="banner_shadow"><img src="{% static 'movie/images/shadow2.png' %}" alt="" class="img"></div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="banner">
+                                                                            <div class="banner_inner">
+                                                                                <a href="#">
+                                                                                    <div class="banner_inner2"><figure><img src="{% static 'movie/images/banner6.jpg' %}" alt="" class="img"></figure>
+                                                                                        <div class="caption">
+                                                                                            <div class="txt1">CSS Interview questions</div>
+                                                                                            <div class="txt2"><a href="{% url 'movie:css_questions' %}">Click Here</a></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="banner_shadow"><img src="{% static 'movie/images/shadow2.png' %}" alt="" class="img"></div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="banner">
+                                                                            <div class="banner_inner">
+                                                                                <a href="#">
+                                                                                    <div class="banner_inner2"><figure><img src="{% static 'movie/images/banner6.jpg' %}" alt="" class="img"></figure>
+                                                                                        <div class="caption">
+                                                                                            <div class="txt1">Java Script Interview questions</div>
+                                                                                            <div class="txt2"><a href="{% url 'movie:js_questions' %}">Click Here</a></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="banner_shadow"><img src="{% static 'movie/images/shadow2.png' %}" alt="" class="img"></div>
+                                                                    </li>
+                                                                     <li>
+                                                                        <div class="banner">
+                                                                            <div class="banner_inner">
+                                                                                <a href="#">
+                                                                                    <div class="banner_inner2"><figure><img src="{% static 'movie/images/banner6.jpg' %}" alt="" class="img"></figure>
+                                                                                        <div class="caption">
+                                                                                            <div class="txt1">PHP Interview questions</div>
+                                                                                            <div class="txt2"><a href="{% url 'movie:php_questions' %}">Click Here</a></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="banner_shadow"><img src="{% static 'movie/images/shadow2.png' %}" alt="" class="img"></div>
+                                                                    </li>
+                                                                     <li>
+                                                                        <div class="banner">
+                                                                            <div class="banner_inner">
+                                                                                <a href="#">
+                                                                                    <div class="banner_inner2"><figure><img src="{% static 'movie/images/banner6.jpg' %}" alt="" class="img"></figure>
+                                                                                        <div class="caption">
+                                                                                            <div class="txt1">DBMS Interview questions</div>
+                                                                                            <div class="txt2"><a href="{% url 'movie:dbms_questions' %}">Click Here</a></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="banner_shadow"><img src="{% static 'movie/images/shadow2.png' %}" alt="" class="img"></div>
+                                                                    </li>    
+                                                                    <li>
+                                                                        <div class="banner">
+                                                                            <div class="banner_inner">
+                                                                                <a href="#">
+                                                                                    <div class="banner_inner2"><figure><img src="{% static 'movie/images/banner6.jpg' %}" alt="" class="img"></figure>
+                                                                                        <div class="caption">
+                                                                                            <div class="txt1">Django Interview questions</div>
+                                                                                            <div class="txt2"><a href="{% url 'movie:django_questions' %}">Click Here</a></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="banner_shadow"><img src="{% static 'movie/images/shadow2.png' %}" alt="" class="img"></div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="banner">
+                                                                            <div class="banner_inner">
+                                                                                <a href="#">
+                                                                                    <div class="banner_inner2"><figure><img src="{% static 'movie/images/dslogo.jpg' %}" alt="" class="img"></figure>
+                                                                                        <div class="caption">
+                                                                                            <div class="txt1">Data Structure Interview questions</div>
+                                                                                            <div class="txt2"> <a href="{% url 'movie:ds_questions' %}">Click Here</a></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="banner_shadow"><img src="{% static 'movie/images/shadow2.png' %}" alt="" class="img"></div>
+                                                                    </li>
+                                                             
+                                                              
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slogan1">
+                                            <div class="txt1"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Our Services<img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px"></div>
+                                            <div class="txt2">We will be Provide study materials.we provided programming language study material which is written in friendly Launguage thus you can understand very easily.
+
+                                        </div>
+                                            <div class="txt3">serving since 2020</div>
+                                        </div>
+                                        <div id="content">
+                                            <div class="container">
+                                                <div class="hl1"></div>
+                                                <div class="row">
+                                                    <div class="span4">
+                                                        <h2><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Launguages</h2>
+                                                        <ul class="ul1">
+                                                            <li><a href="{% url 'movie:python_file' %}">Python</a></li>
+                                                            <li><a href="{% url 'movie:c_file' %}">C</a></li>
+                                                            <li><a href="{% url 'movie:cpp_file' %}">C++</a></li>
+                                                            <li><a href="{% url 'movie:java_file' %}">Java</a></li>
+                                                            <li><a href="{% url 'movie:php_file' %}">PHP</a></li>
+                                                            <li><a href="{% url 'movie:ds_file' %}">Data Structure</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h2><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Contact Us</h2>
+                                                        <div class="date1 clearfix">
+                                                            <div class="txt">1</div>
+                                                            <div class="caption">
+                                                                <div class="txt1">Mobile No.</div>
+                                                                <div class="txt2">+91 8182868742 <br> +91 8299350441 </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="date1 clearfix">
+                                                            <div class="txt">2</div>
+                                                            <div class="caption">
+                                                                <div class="txt1">WhatsApp No.</div>
+                                                                <div class="txt2">+91 9389685155 <br> +91 8299350441 </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="date1 clearfix">
+                                                            <div class="txt">3</div>
+                                                            <div class="caption">
+                                                                <div class="txt1">E-mail</div>
+                                                                <div class="txt2">vinayaksriavstava880@gmail.com <br>anjaliverma111199@gmail.com </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h2><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Developers</h2>
+                                                        <div class="testimonials_wrapper">
+                                                            <div class="testimonials_inner">
+                                                                <ul id="testimonials" class="clearfix">
+                                                                    
+                                                                   
+                                                                    
+                                                                    
+                                                                     <li class="">
+                                                                        <div class="testimonial1"><img src="{% static 'movie/images/anjali.jpg' %}" alt="" class="img"></div>
+                                                                        <div class="testimonial1_2">
+                                                                            <div class="caption">
+                                                                                <div class="txt1" style="text-align: justify;"> My Self Anjali Verma and I am web application developer from UPSIDC Naini, Prayagraj 211010.I hope after using Erudition it saves yours time and give good materials too.I hope you are pleased with Erudition</div>
+                                                                                <div class="name"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Anjali Verma</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    
+                                                                    <li class="">
+                                                                        <div class="testimonial1"><img src="{% static 'movie/images/vinayak.jpg' %}" alt="" class="img"></div>
+                                                                        <div class="testimonial1_2">
+                                                                            <div class="caption">
+                                                                                <div class="txt1" style="text-align: justify;">My self Vinayak Srivastava and I am web developer from UPSIDC Naini, Prayagraj 211010.. Erudition is facilitate you study material. They have solved your problem in an efficent way. It help you alot to learn programming Launguages.</div>
+                                                                                <div class="name"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Vinayak Srivastava</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+
+                                                                    
+                                                                    <li class="">
+                                                                        <div class="testimonial1"><img src="{% static 'movie/images/ankit.jpg' %}" alt="" class="img"></div>
+                                                                        <div class="testimonial1_2">
+                                                                            <div class="caption">
+                                                                                <div class="txt1" style="text-align: justify;"> My Self Ankit Maurya and I am Backend developer.I wish you like our backend support.</div>
+                                                                                <div class="name"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Ankit Maurya<div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+
+                                                                    
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="testimonial_pagination clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+{% endblock %}

@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Erudition</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your description">
+<meta name="author" content="Your name">
+{% load static %}
+{% block head %}{% endblock %}
+<link rel="icon" href="{% static 'movie/images/favicon.ico' %}" type="image/x-icon">
+<link rel="shortcut icon" href="{ % static 'movie/images/favicon.ico'}" type="image/x-icon" />
+
+<link rel="stylesheet" href="{% static 'movie/css/bootstrap.css' %}" type="text/css" media="screen">
+<link rel="stylesheet" href="{% static 'movie/css/bootstrap-responsive.css' %}" type="text/css" media="screen">
+<link rel="stylesheet" href="{% static 'movie/css/camera.css' %}" type="text/css" media="screen">
+<link rel="stylesheet" href="{% static 'movie/css/style.css' %}" type="text/css" media="screen">
+<script type="text/javascript" src="{% static 'movie/js/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'movie/js/jquery.easing.1.3.js' %}"></script>
+<script type="text/javascript" src="{% static 'movie/js/superfish.js' %}"></script>
+<script type="text/javascript" src="{% static 'movie/js/jquery.ui.totop.js' %}"></script>
+<script type="text/javascript" src="{% static 'movie/js/camera.js' %}"></script>
+<script type="text/javascript" src="{% static 'movie/js/jquery.mobile.customized.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'movie/js/jquery.caroufredsel.js' %}"></script>
+<script type="text/javascript" src="{% static 'movie/js/jquery.touchSwipe.min.js' %}"></script> <script>
+$(document).ready(function()
+{
+    //
+
+    $('#camera_wrap').camera
+    (
+      {
+        //thumbnails: true
+        //alignment         : 'centerRight',
+        autoAdvance : true,
+        mobileAutoAdvance   : true,
+        fx : 'simpleFade',
+        height:'41%',
+        hover:false,
+        loader:'none',
+        navigation:false,
+        navigationHover: true,
+        mobileNavHover: true,
+        playPause: false,
+        pauseOnClick: false,
+        pagination : true,
+        time: 5000,
+        transPeriod: 1000,
+        minHeight: '200px'
+    });
+
+    //  carouFredSel banner
+    $('#banner .carousel.main ul').carouFredSel
+    (
+      {
+        auto:
+      {
+            timeoutDuration: 8000
+        },
+        responsive: true,
+        prev: '.banner_prev',
+        next: '.banner_next',
+        width: '100%',
+        scroll:
+      {
+            items: 1,
+            duration: 1000,
+            easing: "easeOutExpo"
+        },
+        items:
+      {
+        width: '350',
+            height: 'variable', //  optionally resize item-height
+            visible:
+        {
+                min: 1,
+                max: 3
+            }
+        },
+        mousewheel: false,
+        swipe:
+      {
+            onMouse: true,
+            onTouch: true
+            }
+    }
+  );
+
+    //  testimonials
+    $('#testimonials').carouFredSel
+    (
+      {
+        auto:
+       {
+            timeoutDuration: 8000
+        },
+        responsive: true,
+        //prev: '.prev_testimonials',
+        //next: '.next_testimonials',
+        width: '100%',
+        scroll:
+      {
+            items: 1,
+            duration: 1000,
+            easing: "easeOutExpo",
+            fx: "fade"
+        },
+        items:
+       {
+        width: '1000',
+            height: 'variable', //  optionally resize item-height
+            visible: {
+            min: 1,
+            max: 1
+            }
+        },
+        mousewheel: false,
+        swipe:
+       {
+            onMouse: true,
+            onTouch: true
+            },
+        pagination  : ".testimonial_pagination"
+    }
+  );
+
+
+
+    $(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
+    function updateSizes_vat()
+    {
+        $('#banner .carousel.main ul').trigger("updateSizes");
+        $('#testimonials').trigger("updateSizes");
+    }
+    updateSizes_vat();
+
+
+
+  }
+); //
+  $(window).load(function()
+  {
+    //
+
+   }
+  ); //
+</script> <!--[if lt IE 8]><div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div><![endif]--><!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen"><![endif]--></head>
+<body class="front">
+    <div id="main">
+        <div class="top1_wrapper">
+            <div class="top1_wrapper2">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <div class="top1 clearfix">
+                                <div class="block1 clearfix">
+                                    <header>
+                                        <div class="logo_wrapper">
+                                            <a href="{% url 'movie:index' %}" class="logo"><img src="{% static 'movie/images/logoimg.jpg' %}" width="100px" height="100px"></a>
+                                                <div class="phone1">
+                                            <div class="txt1">
+                    
+                                            <div class="txt2"> Erudition </div>
+
+                                        </div>
+                                        </div>
+                                    </header>
+                                    <div class="block2 clearfix">
+                                        <div class="phone1">
+                                            <div class="txt1">
+                                                <div class="txt3"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Have questions?</div>
+                                                <div class="txt4">E-mail:</div>
+                                            </div>
+                                            <div class="txt2"> help@erudition.com </div>
+
+                                        </div>
+                                        <div class="block3 clearfix"> 
+                                            <div class="search-form-wrapper clearfix">
+                                                <form id="search-form" action="search.php" method="GET" accept-charset="utf-8" class="navbar-form"><input type="text" name="s" value='Search' onBlur="if(this.value=='') this.value='Search'" onFocus="if(this.value =='Search' ) this.value=''"> <a href="https://www.google.com" onClick="document.getElementById('search-form').submit()"></a></form>
+                                            </div>
+                                            <div class="social_wrapper">
+                                                <ul class="social clearfix">
+                                                    <li><a href="https://m.facebook.com/" target="_blank"><img src="{% static 'movie/images/social_ic1.png' %}"></a></li>
+                                                    <li><a href="#"><img src="{% static 'movie/images/social_ic2.png' %}"></a></li>
+                                                    <li><a href="https://mobile.twitter.com/account?_e_pi_=7%2CPAGE_ID10%2C2614746595" target="_blank"><img src="{% static 'movie/images/social_ic3.png' %}"></a></li>
+                                                    <lis><a href="#"><img src="{% static 'movie/images/social_ic4.png' %}"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu_wrapper">
+                                    <div class="menu_left"></div>
+                                    <div class="menu_right"></div>
+                                    <div class="navbar navbar_">
+                                        <div class="navbar-inner navbar-inner_">
+                                            <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+                                            <div class="nav-collapse nav-collapse_ collapse"> 
+                                                <ul class="nav sf-menu clearfix">
+                                                    <li class="active"><a href="{% url 'movie:index' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">home</a></li>
+                                                    
+                                                    <li class="sub-menu sub-menu-1"><a href="#"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Launguages<em></em></a>
+                                                        <ul>
+                                                            <li><a href="{% url 'movie:python_file' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Python</a></li>
+                                                            <li><a href="{% url 'movie:c_file' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">C</a></li>
+                                                            <li><a href="{% url 'movie:cpp_file' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">C++</a></li>
+                                                            <li><a href="{% url 'movie:java_file' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Java</a></li>
+                                                            <li><a href="{% url 'movie:php_file' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">PHP</a></li>
+                                                            <li><a href="{% url 'movie:ds_file' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Data Stucture</a></li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <li class="sub-menu sub-menu-1"><a href="#"><img src="{% static 'movie/images/star1.gif' %}" width="18px" height="18px">Interview Portal<em></em></a>
+                                                        <ul>
+                                                            <li><a href="{% url 'movie:c_questions' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">C questions</a></li>
+
+                                                            <li><a href="{% url 'movie:cpp_questions' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">C++ questions </a></li>
+
+                                                            <li><a href="{% url 'movie:java_questions' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Java questions </a></li>
+
+                
+                                                            <li><a href="{% url 'movie:python_questions' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Python questions </a></li>
+
+                                                            <li><a href="{% url 'movie:html_questions' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">HTML questions </a></li>
+
+                                                            <li><a href="{% url 'movie:css_questions' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">CSS questions </a></li>
+
+                                                            <li><a href="{% url 'movie:js_questions' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Java Script questions </a></li>
+
+                                                             <li><a href="{% url 'movie:php_questions' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">PHP questions </a></li>
+
+                                                             <li><a href="{% url 'movie:dbms_questions' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">DBMS questions </a></li>
+
+                                                             <li><a href="{% url 'movie:django_questions' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Django questions </a></li>
+
+                                                            <li><a href="{% url 'movie:ds_questions' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Data Structure questions </a></li>
+                                                            
+                                                        </ul>
+                                                    </li>
+                                                        
+                                                    {% csrf_token %}
+                                                    {% if user.is_authenticated %} <!-- if user logged in then -->
+                                                    <li class="active">
+                                                        <a  href="{% url 'movie:change_password' %}">
+                                                            <span class="glyphicon glyphicon-edit" aria-hidden="true"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px"></span>Change Password
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="active"><a href="{% url 'movie:profile' user.id %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">View Profile<!--Hello, {{user.username}}--></a></li>
+
+
+                                                    <li class="active"><a href="{% url 'movie:update_user' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Edit Profile</a></li>
+
+                                                    <li class="active"><a href="{% url 'movie:logout' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Logout</a></li>
+
+                                                        
+                                                    {% else %}
+                                                    <li class="active"><a href="{% url 'movie:login' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Login</a></li>
+
+                                                    <li class="active"><a href="{% url 'movie:signup' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">Signup</a></li>
+                                                    
+
+                                                     <li class="active"><a href="{% url 'movie:about' %}"><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px">About Us</a></li>
+
+                                                    {% endif %}
+                                                    
+
+
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="top2"></div>
+         
+
+{% block body %}
+{% endblock %}
+                
+            <div>
+                <div class="akm">
+                        <div class="v">
+
+                
+            </div>
+                <div class="bot1"></div>
+                <div class="bot2_wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span12">
+                                <div class="bot2 clearfix">
+                                    <footer><img src="{% static 'movie/images/star1.gif' %}" width="25px" height="25px"><a href="{% url 'movie:copyright' %}">Copyright</a> &copy; 2020. Erudition All rights reserved.
+
+                                    <br/><br/>
+                                    <li class="active"><a href="{% url 'movie:index' %}">Home</a>
+                                               &nbsp  <a href="{% url 'movie:privacy' %}">Cookies & Privacy Policy</a>
+                                               &nbsp  <a href="{% url 'movie:term' %}">Term of Use</a>
+                                               &nbsp  <a href="{% url 'movie:about' %}">About Us</a>
+                                               &nbsp  <a href="{% url 'movie:contact' %}">Contact Us</a>
+                                               &nbsp <a href="{% url 'movie:report' %}">Report Error</a>
+                                    </li>
+                                </footer>
+                                    <li>
+                                        <div class="social_wrapper bot">
+                                            <b>Follow Us:</b>
+                                            <ul class="social clearfix">
+
+                                                <li><a href="https://m.facebook.com/" target="_blank"><img src="{% static 'movie/images/social_ic5.png' %}"></a></li>
+                                                <li><a href="#"><img src="{% static 'movie/images/social_ic6.png' %}"></a></li>
+                                                <li><a href="https://mobile.twitter.com/account?_e_pi_=7%2CPAGE_ID10%2C2614746595" target="_blank"><img src="{% static 'movie/images/social_ic7.png' %}"></a></li>
+                                                <li><a href="#"><img src="{% static 'movie/images/social_ic8.png' %}"></a></li><br/>
+                                            </ul>
+                                        </div>
+                                    
+                                    </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+         
+     </div>
+    <script type="text/javascript" src="{% static 'movie/js/bootstrap.js' %}"></script>
+
+
+</body>
+</html>

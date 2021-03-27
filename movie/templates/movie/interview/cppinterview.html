@@ -1,0 +1,125 @@
+{% extends 'movie/base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'movie/css/profile.css' %}" />
+{% endblock %}
+
+{% block body %}
+<div class="akm">
+<div class="v">
+
+ <center><h2> <b>Welcome!</b> &nbsp&nbsp C++ Interview Questions</h2></center>
+
+
+                
+
+<b>1)Describe something about C++ language?</b></br></br>
+C++ language is a partially OOPS language.It is based on class and Objects.This language is advanced version of C language.</br></br></br></br>
+
+<b>2) Write basic concepts of OOPS?</b></br></br>
+Concepts of OOPS are given below:</br>
+1)Abstraction</br>
+2)	Encapsulation</br>
+3)	Polymorphism</br>
+4)	Inheritance</br>
+</br></br></br>
+
+<b>3) What is a class?</b></br></br>
+A class is a blueprint that contains a similar type of objects in it. It describes all the details of an object.</br></br></br></br>
+
+<b>4) What is an Object?</b></br></br>
+ Objects have its own state, behavior and identity.It is an instance of a class.</br></br></br></br>
+ 
+ <b>5) What is an abstraction?</b><br/><br/>
+ Abstraction means 'To Hide', that means abstraction is used to hide the unnecessary details , only required details for an objects are shown.</br></br></br></br>
+
+<b>6) Do you know about encapsulation?</b></br></br>
+Wrapping up data in a single unit is known as encapsulation.</br></br></br></br>
+
+<b>7) What is Polymorphism?</b></br></br>
+Polymorphism is more than one form.It assigns value in a subclass which was already declared in the main class.</br></br></br></br>
+
+<b>8) What is inheritance?</b></br></br>
+Inheritance is used to inherit some properties from parent class to child class.Child class has its own properties also.</br></br></br></br>
+
+<b>9)For what super keyword is use?</b></br></br>
+Super keyword invokes immediately the parent class method.If parent and child class have same name method and we want to call parent class method then we have to use Super keyword.</br></br></br></br>
+</br></br></br></br>
+
+<b>10) Explain the constructor.</b></br></br>
+Constructor initializes the object of its class having same name as the class.</br>
+	i)A constructor must have no return type.</br>
+	ii)Constructor name should not even void.</br></br></br></br>
+
+<b>11) Define Destructor?</b></br></br>
+Destructor is a method.It is always automatically called when the object is need to be destroy.With the symbol <b>'~ '</b> known as 'tilde',destructor name is also same as class name.</br></br></br></br>
+
+
+<b>12) What is a virtual function?</b></br></br>
+With the use of keyword "virtual" during function declaration,virtual function is a member function of a class which is redefined by its derived class and declared within a base class.
+In C++ programming language ,virtual function can be declared using a token.Virtual function cannot be a friend  function of a class.</br></br></br></br>
+
+<b>13) What is a friend function?</b></br></br>
+A function that is allowed a friend of a class to access Public, private, or protected data in that same class is known as friend function.The function cannot be access that information if it is defined outside the class.
+ There is no effect on friend function of access control keywords (like private, public, or protected) and it can be declared anywhere in the class declaration</br></br></br></br>
+
+<b>14) What is a pure virtual function?</b></br></br>
+A function which can be overridden in the derived class but cannot be defined is known as pure virtual function.By using the operator =0 a virtual function can be declared as Pure.</br></br></br></br>
+<b>eg.</b></br>
+Virtual void functionA() // Virtual, Not pure</br>
+Virtual void functionB() = 0 //Pure virtual</br></br></br></br> 
+ 
+<b>15) What is function overloading?</b></br></br>
+When more than one function have the same name with different parameters in a same class then it is called as function overloading.
+It can be perform different tasks.</br></br><br/><br/>
+
+<b>16) What is the main difference between a class and an object?</b></br></br>
+Objects can hold various informations and it is an instance of a class.,but classes contains similar types of objects.</br></br></br></br>
+
+<b>17) What is the main difference between overloading and overriding?</b></br></br>
+Overloading is static Binding,whereas Overriding is dynamic Binding.Overloading is nothing but the same method with different arguments,and it may or may not return the equal value in the same class itself.Overriding is the same method names with the same arguments and return types associated with the class and its child class.</br></br></br></br>
+
+<b>18) What is method overriding?</b></br></br>
+When more than one method have the same name in different class i.e if a child class has same method as parent class then its known as method overriding.</br></br></br></br>
+
+<b>19) What is the use of finalize method?</b></br></br>
+Finalize method is used to remove resources which are not currently used.This method is accessible by a derived class and it is protected.</br></br></br></br>
+
+<b>20) What is an abstract class?</b></br></br>
+We cannot create an object in abstract class but it can be inherited.It can contain only an Abstract method.</br></br></br></br>
+
+<b>21)What is Exception handling? </b></br><br/>
+Exception handling is an event which is used to handle the run time errors caused by exception by using try catch, throw, throws, and finally keywords.</br></br></br></br>
+
+<b>22) What are the access modifiers?</b></br></br>
+Access modifiers determine the scope of the method or variables that can be accessed from other various objects or classes.There are five types of access modifiers,and they are as follows:</br>
+1)  Private</br>
+2)	Protected</br>
+3)  Public</br>
+4)	Friend</br>
+5)	Protected Friend</br></br></br></br>
+
+<b>23)How many types of Arguments?</b></br></br>
+There are two types of Arguments:<br/>
+	<b>1)Call by Value :</b> Passed value can modifies only inside the function, and it returns the same value which is passed into the function.</br>
+	<b>2)Call by Reference :</b>Passed value can modifies in both side(inside&outside)of the functions and returns the same or different value.</br></br></br></br>
+
+<b>24) What is the default access modifier in a class?</b></br></br>
+Private access modifier</br></br></br></br>
+
+<b>25) What are all the operators that cannot be overloaded?</b></br></br>
+<b>The operators which cannot be overloaded are given below:</b></br>
+1)	Scope Resolution (::)</br>
+2)	Member Selection (.)</br>
+3)	Member selection through a pointer to function (.*)</br></br></br></br>
+
+	
+	
+
+
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

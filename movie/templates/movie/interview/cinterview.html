@@ -1,0 +1,121 @@
+
+{% extends 'movie/base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'movie/css/profile.css' %}" />
+{% endblock %}
+
+{% block body %}
+<div class="akm">
+<div class="v">
+
+ <center><h2> <b>Welcome!</b> &nbsp&nbsp C Interview Questions</h2></center>
+
+<b>1)Tell me something about 'C' language.</b><br/><br/>
+C is a general purpose procedural programming language.It is structured programming language.This language has rich set of operators & data types and very less number of reserved words.</b></br></br>
+
+<b>2)What is header files in C?</b></br></br>
+Header files contains function declaration, variables, constant and micro definitions that can be shared between several source files. </br></br></br></br>
+
+<b>3)What are statements in C?</b></br></b>
+It is a comment given to the computer which instructs the computer to perform some specific task for example :display to the computer screen or open file.  </br></br></br></br>
+
+<b>4)What are the types of statements?</b></br></br>
+The types of statements of computer programs are:</br>
+1)Lebaled statement</br>
+2)Compound statement</br>
+3)Expression statement</br>
+4)Selection statement</br>
+5)Iteration statement<br/>
+6)Jump statement<br/><br/><br/><br/>
+
+ <b>5) What is getchar()?</b></br></br>
+getchar() read only single character at a time and returns it as an integer.If we want to read more than one character at a time then we have to use this function in the loop.</br></br></br></br>
+
+<b>6) What is putchar()?</b></br></br>
+putchar() is used to pass the character on the screen and returns the same character.It is also read single character at a time.</br></br></br></br>
+
+<b>7) What is macros?</b></br></br>
+Macros defines with '#define' preprocessor directive.It is a fragment of code that is given a name and that is used in the program.</br></br></br></br>
+
+<b>8 When the switch statement is use? </b></br></br>
+A switch statement is generally used when more than two conditional expressions based on a single variable of numeric type.
+</br></br></br></br>
+
+<b>9) What is a static function?</b></br></br>
+A static function's scope is limited to the current source file.When the function or variable is visible outside of the current source file,then it is said to be external or global scope and when the function or variable is not visible outside of the current source file,then it is said to be local or static scope.
+</br></br></br></br>
+
+<b>10) What is an argument? </b></br></br>
+ThiIt is an entity which is used to pass the data when the function called from the calling function.</br></br></br></br>
+
+<b>11) What is a pointer variable? </b></br></br>
+ A pointer variable is a data object that refers to a memory location.In the memory each memory location is numbered and that memory lacation number whch is attached 
+ is called the address of the location.
+</br></br></br></br>
+
+<b>12) In c programming language what is the use of break?</b></br></br>
+ break is used to terminating the loop immediately after it is encountered.It is used with the conditional if statement and switch statement.</br></br></br></br> 
+
+<b>13) What is continue statement?</b></br></br>
+Continue statement is used to skip some statements inside the loop.</br></br></br></br>
+
+<b>14) What is function?</b></br></br>
+Function is self contained block of code which is used to perform a particular task.</br></br></br></br>
+
+<b>15) What is pointer?</b></br></br>
+ With the use of '*' operator pointer access the pointed data.It is used to exploit data using the address. </br></br></br></br>
+
+ <b>16) What is 'void' ?</b></br></br>
+When void is use before main() function that means the function main() does not return a value.</br></br></br></br>
+
+<b>17) Why we use getch () in our program?</b></br></br>
+getch() is used to hold the program execution.It reads a single byte character from input.</br></br></br></br>
+
+<b>18) What is main()?</b></br></br>
+In C programming language main() is the parent function of all the functions.</br></br></br></br>
+
+<b>19) What are the different storage classes in C??</b></br></br>
+There are three types of storage in C: <br/>
+1)automatic <br/>
+2)static <br/>
+3)allocated</br></br></br></br>
+
+<b>20) What is calloc()?</b></br></br>
+calloc() initializes the allocated memory to ZERO. calloc() needs two arguments:<br/>
+1)number of variables to allocate memory<br/>
+2)size in bytes of a single variable
+</br></br></br></br>
+
+<b>21) What are preprocessor directives?</b></br></br>
+Source code is processed by a program before its compilation in a compiler this process is known as preprocessor and that command which is used in preprocessor are called preprocessor directives.</br></br></br></br>
+
+<b>22) What is debugging?</b></br></br>
+Debugging is the process of finding errors within a program.When we compiled  any program, errors that are found will stop the program  execution completely but debugging ensures the removal of errors and executes program output.
+</br></br></br></br>
+
+<b>23) What is the difference between printf() and sprintf()? </b></br></br>
+printf() writes data to the standard output device whereas sprintf() writes data to the character array. </br></br></br></br>
+
+<b>24) What is a null pointer?</b></br></br>
+Sometimes pointer has not points anything then it assigns 0(null) which is known as null pointer.<br/> 
+ There are three ways to use null pointer:<br/>
+ 1) To stop indirection in a recursive data structure<br/>
+ 2) As an error value<br/>
+ 3) As a sentinel value
+</br></br></br></br>
+
+<b>25) How many ways in which pointer variables initialized?</b></br></br>
+There are two ways in which pointer variable are initialized: <br/>
+1) Static memory allocation <br/>
+2)Dynamic memory allocation</br></br></br></br>
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}
+

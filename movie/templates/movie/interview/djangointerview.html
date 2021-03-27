@@ -1,0 +1,239 @@
+{% extends 'movie/base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'movie/css/profile.css' %}" />
+{% endblock %}
+
+{% block body %}
+<div class="akm">
+<div class="v">
+
+<center><h2><b>Welcome!!!</b> &nbsp&nbsp Django Interview Question </h2></center>
+
+																					
+<b>1) What do you know about Django?</b></br></br>
+
+Django is a framework that is used in  web development ,(was developed in a fast-paced newsroom), It is a free and open-source framework that was  named after Django Reinhardt who was a jazz guitarist from the 1930's. Django is maintained by  the Django Software Foundation (that is a non-profit organization). The main goal of Django is to enable Web Development make ease and faster .</br></br></br></br>
+												
+																						
+																							
+<b>2)Do you know some companies that make use of Django? </b></br></br></br>
+
+Yes,  Django are used Instagram, DISCUS, Mozilla Firefox, YouTube, Pinterest, Reddit, etc.
+
+</br></br></br></br>
+																							
+																						
+																		
+<b>3) Write a command to check the version of Django installed on your system</b></br></br>
+To check the version of Django use following command:- <br/>
+<b>python -m django –version</b> <br/>
+You can also import by following code:- <br/>
+import django <br/>
+print(django.get_version()) </br></br></br></br>
+																						
+																																		
+ <b>4) What are the commands for connect Django project to the database?</b></br></br>
+ To connect your project to this database, use the following commands:- <br/>
+
+<b>1.</b>python manage.py migrate <br/>
+<b>2.</b>python manage.py makemigrations <br/>
+<b>3.</b>python manage.py sqlmigrate </br></br></br></br>
+																			
+																																
+																							
+<b>5) What are the default files that are automatics created when you create a Django Project?
+   </b></br></br>
+
+ <b>1.</b> manage.py <br/>
+
+ 
+<b>2.</b>__init__.py<br/>
+ 
+ 
+<b>3.</b>settings.py<br/>
+ 
+ 
+<b>4.</b>urls.py<br/>
+ 
+ 
+<b>5.</b>wsgi.py
+ 
+
+</br></br></br></br>
+						
+
+<b>6) What do you know about Models?     </b></br></br>
+  
+
+ Models are work as the abstraction layer that is used to make structured and manipulated your data.The  Django models are a subclass of the <b>django.db.models</b>.The representation of database fields by Model class and the attributes in the models.
+
+ </br></br></br></br>
+
+																						
+<b>7)  What do you know about views?    </b></br></br>
+	Django views is work for the purpose of encapsulation. The views are  encapsulate the logic liable for processing a user’s request and for returning
+the response return to the user. Views in Django return two things either return an HttpResponse or raise an exception such as Http404. In Django, Views are  also  used for perform om tasks such as read records from the database, delegate to the templates, generate  PDF files, etc.
+  </br></br></br></br>
+
+
+<b>8)   What do you know about Templates   </b><br/><br/>
+     In Django, templates  layer is used to  renders the information to  represent in a designer-friendly format to the user. You can generate dynamic HTML by the using of templates. The HTML consists of both static as well as dynamic parts of the content. Django facilitate us to use one or more templates as per our requirements. And  also fine to have none of them.<br/>
+
+<b>Django uses its own template system that is known as the "Django template language (DTL)".</b>
+
+
+ </br></br></br></br>
+
+
+<b>9) What is inheritance styles in Django? </b></br></br>
+       <b>In Django,</b> there are three types of inheritance styles :-<br/>
+       
+        <b>1.</b> Abstract base classes <br/>
+ 		<b>2.</b>Multi-table inheritance <br/>
+		<b>3.</b>Proxy models</br></br></br></br>
+ 
+
+
+
+
+<b>10) What is the use of Static Files ?   </b></br></br>
+In Django, the static files are used to work for additional files such as the CSS, JavaScript, Images. <b> "django.contrib.staticfiles" </b> used to managing additional files. These additional files are created within the project app directory by creating a subdirectory that is known as static.  </br></br></br></br>
+
+
+<b>11)  Write the some name of Signals ?
+    </b></br></br>
+      
+       <b>1.</b> django.db.models.signals.pre_save <br/>
+
+django.db.models.signals.post_save
+ <br/>
+
+ 
+<b>2.</b>django.db.models.signals.pre_delete <br/>
+
+django.db.models.signals.post_delete
+<br/>
+ 
+ 
+<b>3.</b>django.db.models.signals.m2m_changed
+
+
+</br></br></br></br>
+																																	
+																						
+<b>12)  Explain about Field Class.    </b></br></br>
+      The Field class is basically an abstract class that is used to represent a column  from the database table. RegisterLookupMixin it is the subclass of Field class. These fields are used to create database tables (db_type()) which is used to map Python types to the database using get_prep_value() and vice versa using from_db_value() method.
+
+. </br></br></br></br>
+
+
+<b>13) What is the command of crete a Django project ?    </b></br></br>
+    You can write the following command in cd into directory whereever you want to create your project:- <br/>
+
+<b>django-admin startproject project_name</b> </br></br></br></br>
+
+
+<b>14) Write a command to  view and filter items from the database </b></br></br>
+       To view all the items from your database you can use the ‘all()’ function as follows:-<br/>
+
+<b>ABC.objects.all()</b> <br/> <br/>
+To filter some element from your database you have to way the use of the get() method or the filter method as follows:- <br/>
+<b>XYZ.objects.filter(pk=1) <br/>
+XYZ.objects.get(id=1)</b>
+ </br></br></br></br>
+
+
+
+<b>15)  What are the exception classes in Django ?    </b></br></br>
+
+	<b>1.</b> AppRegistryNotReady
+ <br/>
+
+ 
+<b>2.</b>ObjectDoesNotExist
+<br/>
+ 
+ 
+<b>3.</b>EmptyResultSet
+<br/>
+ 
+ 
+<b>4.</b>FieldDoesNotExist
+<br/>
+ 
+ 
+<b>5.</b>MultipleObjectsReturned
+
+       </br></br></br></br>
+
+
+ <b>16)  Is Django follows DMS? </b></br></br>
+      
+
+     No, Django is not follows a CMS. The CMS is the short form of <b> content-management-system</b>. CMS is a Web framework, by which you can build websites.  </br></br></br></br>
+																																	
+																						
+<b>17)  Write a program to show the Django View.  </b></br></br>
+	You should write given code to show the Django view:- <br/>
+	from django.http import HttpResponse <br/>
+	def hello_world(request):   <br/>
+	html = "<h1>Hello World!</h1> " <br/> 
+	return HttpResponse(html)
+     </br></br></br></br>
+
+
+<b>18)How can you see all objects on admin site when not appearing?
+ </b></br></br>
+     
+     Inconsistent row counts are a result of missing <b>"Foreign Key"</b> values or if the Foreign Key field is set to null=False.<br/>
+      If the Foreign Key points to  record that doesn't exist. And also if that foreign key is present in the list_display method, the record will not be shown the admin change_list.
+ </br></br></br>
+
+
+<b>19) What do you know about "csrf_token"?  </b></br></br>
+		
+		   The csrf_token is provide security. It protect from the <b> "Cross-Site Request Forgeries" </b>. That type of attack are arrive whenever a malicious website consists of a form, a link, or some JavaScript. The main of of these malicious website is to perform harmfull action on your website  by using the login credentials of a genuine user.   </br></br></br></br> 
+
+
+
+<b>20) Django support multiple-column Primary Keys, what's your opinion? </b></br></br>
+     <b>No,</b> Django only supports single-column Primary Keys.  </br></br></br></br>
+
+
+<b>21)  Write a commmand to see raw SQL queries that is running by Django.    </b></br></br>
+       <b>1.</b> You must be set TRUE you DEBUG setting. <br/>
+       	<b>2</b> from django.db <b>import </b> connection  <br/>
+       	<b>3.</b> connection.queries 
+
+       </br></br></br></br>
+																																	
+																						
+<b>22)   What is better "Django or Flask"?   </b></br></br>
+     Django is a framework that which is use to build large projects.Unlike Django, Flask is use to build smaller websites. <br/>
+     Flask is easier in learning and use than the Django. <br/>
+     In Django there is no role of any  third-party packages.It is also a  full-fledged framework. where, Flask is a light-weight framework that facilitate you to install third-party tools as per your requirement.<br/>
+ 	 Thus, We can say that on that basis of user's requirement <b>Django</b> is better than Flask.  </br></br></br></br>
+
+
+<b>23)  What is more recommended Python version used with Django?    </b></br></br>
+      	The most recommended version of python used with Django is <b>"Python 3" </b>because this version has more  features, it is faster than other versions, and also it is better supported.
+
+ </br></br></br></br>
+
+
+<b>24)    How can you use "file-based sessions"?  </b></br></br>
+      To use of file-based sessions, you must be set to the SESSION_ENGINE setting to <b>“django.contrib.sessions.backends.
+file” </b>.</br></br></br></br>
+
+
+
+<b>25)  Migrate command must be needed parameter or not?  </b></br></br>
+
+		<b>No,</b> You can use Migrate command with parameters or without parameters. If you do not pass any any parameter, then all apps will have all their migrations running.
+
+
+
+</div>
+</div>
+{% endblock %}
